@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <h1 id="title">Customer Survey</h1>
+
+<div id="main">
+  <form id="survey-form">
+    <p id="description">Let us know how you enjoyed our service</p>
+    
+    <label id="name-label" class="labels">* Name: </label> 
+    <div class="right-tab">
+    <input id="name" type="text" class="input-field" name="name" placeholder="Enter your name" required>   
+    </div>
+    
+    <label id ="email-label" class="labels">* Email: </label> 
+    <div class="right-tab">
+    <input id="email" type="email" class="input-field" name="email" placeholder="Enter your Email" required>
+    </div>
+    
+    <label id="number-label" class="labels">* Client Number:</label>
+<div class="right-tab">
+    <input id="number" type="number" name="client-number" class="input-field" id="number" min="1" max="999" placeholder="Enter your Client Number" required>
+    </div>
+    
+    <label id="dropdown-label" class="labels">Which service did you purchase?</label>
+    <div class="right-tab">
+    <select id="dropdown" class="dropdown">
+      <option disabled value>Select an Option</option>
+      <option value="1">Entry Level </option>
+      <option value="2">Complete </option>
+    </select>
+    </div>
+    <div class="labels">
+      <label> How likely are you to recommend our service to someone else?</label>
+    </div>
+      <div class="right-tab">
+    <ul style="list-style: none;">
+      <li class="radio">Very Likely<input value="1" type="radio" name="radio-buttons"></li>
+      <li class="radio">Somewhat Likely<input value="2" type="radio" name="radio-buttons"></li>
+      <li class="radio">Not Likely<input value="3" type="radio" name="radio-buttons"></li>
+      </ul>
+    </div>
+    <div class="labels">
+    <label for="methods" >How did you hear about our company? (Select all that apply):</label> 
+    </div>
+    <div class=right-tab>
+      <ul style="list-style:none;" id="methods" >
+        <li class="checkbox"><input type="checkbox" value="1">Word of mouth</li>
+        <li class="checkbox"><input type="checkbox" value="2">Website</li>
+        <li class="checkbox"><input type="checkbox" value="3">Television Commercial</li>
+        <li class="checkbox"><input type="checkbox" value="4">Radio Advertisement</li>
+        <li class="checkbox"><input type="checkbox" value="5">Public Flyer</li>
+      </ul>
+    </div>
+      <label class="labels">Any comments or suggestions?  </label>
+    <div class="right-tab">
+    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" placeholder="Enter your comment here..."> </textarea>
+    </div>
+      <button id="submit" type="submit">Submit</button>
+  </form> 
+</div>
+  
+  
+
+</body>
+
+</html>
